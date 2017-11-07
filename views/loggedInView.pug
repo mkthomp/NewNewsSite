@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+    body
+        h2= message
+        a(class='button' href='news') logout
+        p
+        a(class='button' href='add') Create New Article
+        each pubArticle in pubArticles
+            p
+            a(class='button' href='readNews' '#{pubArticle}') #{pubArticle}
+        if (articles)
+            each article in articles
+                p #{article}
+

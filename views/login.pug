@@ -1,0 +1,25 @@
+html
+    head
+        title= title
+    body
+        h2= message
+        form(method='POST' action='./news')
+            div.form-group
+                label(for='name') Name:
+                input#name.form-control(type='text', placeholder='first and last' name='name')
+            div.form-group
+                p User Role:
+                label(for='reporter') Reporter:
+                input#reporter.form-control(type='radio', name='role', value='Reporter')
+                label(for='subscriber') Subscriber:
+                input#subscriber.form-control(type='radio', name='role', value='Subscriber')
+            button.btn.btn-primary(type='submit') Login
+
+            //p Name:
+            //input(type="text" name="name")
+            //p User Role:
+            //input(type="radio" name="role" value="Reporter")
+            //input(type="radio" name="role" value="Subscriber")
+            //br
+            //br
+            //input(type="submit" onclick="./NewNews/news")
